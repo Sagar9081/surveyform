@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="survey.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <form class="row g-3" method="POST" data-netlify="true">
+            <h2>Short Survey Form</h2>
+            <div class="col-6 col-sm-3">
+                <label for="fname" class="form-label">First name</label>
+                <input type="text" class="form-control" placeholder="First name" id="fname" required>
+              </div>
+              <div class="col-6 col-sm-3">
+                <label for="lname" class="form-label">Last name</label>
+                <input type="text" class="form-control" placeholder="Last name"  id="lname" required>
+              </div>
+              <div class="row3">
+                <div class="col-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Enter your mail-id" id="email" required>
+                  </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" placeholder="Enter your city" id="city" required>
+                  </div>
+              
+              <div class="col-md-3">
+                <label for="State" class="form-label">State</label>
+                <select class="form-select" id="State" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Maharashtra</option>
+                  <option>Gujrat</option>
+                  <option>Andhra pradesh</option>
+                  <option>Tamilnadu</option>
+                  <option>Delhi</option>
+                  <option>Uttarakhand</option>
+                </select>
+              </div>
+              <div>
+                  <h5>How Satisfied Are You with:</h5>
+                <table class="table" id="feedback">
+                    <thead>
+                      <tr>
+                        <th class="col-6 col-sm-3" scope="col"></th>
+                        <th  class="col-6 col-sm-3" scope="col">Poor</th>
+                        <th class="col-6 col-sm-3" scope="col">Satisfactory</th>
+                        <th  class="col-6 col-sm-3"scope="col">Good</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th id="main" class="table-active" scope="row">Content</th>
+                        <td class="table-active"><input type="radio" name="Purchase" id="poor"></td>
+                        <td class="table-active"><input type="radio" name="Purchase" id="Satisfactory"></td>
+                        <td class="table-active"><input type="radio" name="Purchase" id="Good"></td>
+                      </tr>
+                      <tr>
+                        <th  id="main" scope="row">Teaching</th>
+                        <td><input type="radio" name="Service" id="poor"></td>
+                        <td><input type="radio" name="Service" id="Satisfactory"></td>
+                        <td><input type="radio" name="Service" id="Good"></td>
+                      </tr>
+                      <tr>
+                        <th   id="main" class="table-active" scope="row">Doubt Solving</th>
+                        <td class="table-active" ><input type="radio" name="Company Overall" id="poor"></td>
+                        <td class="table-active" ><input type="radio" name="Company Overall" id="Satisfactory"></td>
+                        <td class="table-active" ><input type="radio" name="Company Overall" id="Good"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div>
+                <h5>How likely are you to:</h5>
+              <table class="table" id="feedback">
+                  <thead>
+                    <tr>
+                      <th class="col-6 col-sm-3" scope="col"></th>
+                      <th  class="col-6 col-sm-3" scope="col">Unlikely</th>
+                      <th class="col-6 col-sm-3" scope="col">Likely</th>
+                      <th  class="col-6 col-sm-3"scope="col">Very likely</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th id="main" class="table-active" scope="row">Join us in future</th>
+                      <td class="table-active"><input type="radio" name="Join us in future" id=">Unlikely"></td>
+                      <td class="table-active"><input type="radio" name="Join us in future" id="Likely"></td>
+                      <td class="table-active"><input type="radio" name="Join us in future" id="Very likely"></td>
+                    </tr>
+                    <tr>
+                      <th  id="main" scope="row">Recommend our class to others</th>
+                      <td><input type="radio" name="Recommend our class to others" id="Unlikely"></td>
+                      <td><input type="radio" name="Recommend our class to others" id="Likely"></td>
+                      <td><input type="radio" name="Recommend our class to others" id="Very likely"></td>
+                    </tr>
+                
+                  </tbody>
+                </table>
+            </div>
+                <div class="input-group">
+                        <label  for="comments"><h5>Any additional comments or Suggestions</h5></label>
+                        <textarea class="comment" id="comments"></textarea>
+              </div>
+              <label for="rating"><h5>Overall experience</h5></label>
+              <br>
+              &nbsp;
+              &nbsp;
+              &nbsp;
+                <div class="rating">
+                    <input type="radio" name="star" id="star1"><label for="star1"></label>
+                    <input type="radio" name="star" id="star2"><label for="star2"></label>
+                    <input type="radio" name="star" id="star3"><label for="star3"></label>
+                    <input type="radio" name="star" id="star4"><label for="star4"></label>
+                    <input type="radio" name="star" id="star5"><label for="star5"></label>
+    
+            
+
+              </div>
+             
+              <div>
+                <input class="btn btn-primary" type="reset" value="Reset"> 
+                <input class="btn btn-success" type="submit" value="Submit">
+              </div>
+              <div>
+               
+              </div>
+             
+        </form>
+
+    </div>
+    
+  
+</body>
+</html>
